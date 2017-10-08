@@ -13,14 +13,5 @@ namespace GingerTimeSheet.Models
 
         
         public Client Client{ get; set; }
-
-        public DateTime Start { get; set; }
-        public DateTime End { get; set; }
-
-        
-        public AccountDetail Parent { get; set; }
-
-        
-        public Employee Assignee { get; set; }        
     }
 }
