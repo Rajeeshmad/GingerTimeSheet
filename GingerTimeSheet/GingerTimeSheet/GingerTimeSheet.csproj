@@ -105,7 +105,6 @@
     <Content Include="Content\Account.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="ClassDiagram1.cd" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -125,18 +124,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710011803174_GingerTimeSheetMigration.cs" />
-    <Compile Include="Migrations\201710011803174_GingerTimeSheetMigration.Designer.cs">
-      <DependentUpon>201710011803174_GingerTimeSheetMigration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account\AccountDetail.cs" />
+    <Compile Include="Models\Account\AccountEntry.cs" />
     <Compile Include="Models\Account\Client.cs" />
     <Compile Include="Models\Base\ModelBase.cs" />
-    <Compile Include="Models\Employee\Employee.cs" />
+    <Compile Include="Models\Employee\EmployeeMain.cs" />
+    <Compile Include="Models\Employee\EmployeeLogOnDetail.cs" />
+    <Compile Include="Models\Employee\EmployeeRole.cs" />
+    <Compile Include="Models\Employee\Role.cs" />
     <Compile Include="Models\GingerTimeSheetModel.cs" />
     <Compile Include="Models\Interface\IModelBase.cs" />
     <Compile Include="Models\Interface\IModelTimeStamp.cs" />
+    <Compile Include="Models\Project\Project.cs" />
+    <Compile Include="Models\Project\ProjectEntry.cs" />
+    <Compile Include="Models\TimeSheet\ProjectEntryDetail.cs" />
+    <Compile Include="Models\TimeSheet\TimeSheetDue.cs" />
+    <Compile Include="Models\TimeSheet\TimeSheetDueDate.cs" />
+    <Compile Include="Models\TimeSheet\TimeSheetEntry.cs" />
+    <Compile Include="Models\TimeSheet\TimeSheetWorkOrderEntry.cs" />
+    <Compile Include="Models\WorkOrder\ProjectCostEntry.cs" />
+    <Compile Include="Models\WorkOrder\WorkOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,11 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710011803174_GingerTimeSheetMigration.resx">
-      <DependentUpon>201710011803174_GingerTimeSheetMigration.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

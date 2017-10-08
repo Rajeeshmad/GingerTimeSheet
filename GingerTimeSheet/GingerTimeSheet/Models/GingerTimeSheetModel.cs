@@ -21,9 +21,20 @@ namespace GingerTimeSheet.Models
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<AccountDetail> AccountDetails { get; set; }
-        public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Client> ClientDetail { get; set; }
-
+        public virtual DbSet<AccountEntry> AccountEntryDetail { get; set; }
+        public virtual DbSet<EmployeeLogOnDetail> EmployeeLogOnDetails { get; set; }
+        public virtual DbSet<EmployeeMain> EmployeeMainDetail { get; set; }
+        public virtual DbSet<EmployeeRole> EmployeeRoleDetail { get; set; }
+        public virtual DbSet<Project> ProjectDetail { get; set; }
+        public virtual DbSet<ProjectEntry> ProjectEntryDetail { get; set; }
+        public virtual DbSet<ProjectEntryDetail> ProjectEntryDetails { get; set; }
+        public virtual DbSet<TimeSheetDue> TimeSheetDueDetail { get; set; }
+        public virtual DbSet<TimeSheetDueDate> TimeSheetDueDateDetail { get; set; }
+        public virtual DbSet<TimeSheetEntry> TimeSheetEntryDetail { get; set; }
+        public virtual DbSet<TimeSheetWorkOrderEntry> TimeSheetWorkOrderEntryDetail { get; set; }
+        public virtual DbSet<ProjectCostEntry> ProjectCostEntryDetail { get; set; }
+        public virtual DbSet<WorkOrder> WorkOrderEntryDetail { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
